@@ -1,0 +1,8 @@
+prefix=/home/noah/rome_ws/devel
+
+Name: rome_gazebo
+Description: Description of rome_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
