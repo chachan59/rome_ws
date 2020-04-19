@@ -1,0 +1,16 @@
+<launch>
+  <!-- Map server -->
+  <arg name="map_file" default="$(find rome_navigation)/maps/object.yaml"/>
+  <arg name="move_forward_only" default="false"/>
+
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+  <!-- AMCL -->
+  <include file="$(find rome_navigation)/launch/includes/amcl/amcl.launch.xml"/>
+
+  <include file="$(find rome_navigation)/launch/includes/move_base.launch.xml">
+    <arg name="move_forward_only" value="$(arg move_forward_only)"/>
+  </include>
+
+</launch>
+
