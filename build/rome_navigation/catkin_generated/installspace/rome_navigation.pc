@@ -1,0 +1,8 @@
+prefix=/home/noah/rome_ws/install
+
+Name: rome_navigation
+Description: Description of rome_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
